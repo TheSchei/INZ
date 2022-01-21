@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body onload="myFunction()">
+    <h2>Add AP</h2>
+
+    <form action="?" method="POST">
+      <label for="fname">AP name</label><br>
+      <input type="text" id="fname" name="fname" value="Name"><br>
+      <label for="pass">AP password</label><br>
+      <input type="password" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    </br><p id="APList"> </p>
+    </br><a href="index.html">Back</a>
+  </body>
+  <script>
+    function myFunction() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              obj = JSON.parse(xhttp.responseText);
+              var inner = "<table style=\"width:400px;margin-left:auto;margin-right:auto\"><tr><th>Name</th><th>Signal</th></tr>";
+              obj.sort(function(a, b){return b.v-a.v})
+              obj.forEach(element => {
+              inner +="<tr><td onclick = 'myFunction2(\"" + element.n + "\")'>" + element.n + "\t</td><td>";
+              if (element.v > -65) inner += "<img src=\"img/HIGH.png\" height=24></td></tr>";
+              else if (element.v > -80) inner += "<img src=\"img/MED.png\" height=24></td></tr>";
+              else inner += "<img src=\"img/LOW.png\" height=24></td></tr>";
+              });
+            inner += "</table>";
+            document.getElementById("APList").innerHTML = inner;
+            }
+        };
+        xhttp.open("GET", "APlist", true);
+        xhttp.send();
+      }
+      function myFunction2(ele) {
+        document.getElementById("fname").value = ele;
+      }
+  </script>
+</html>

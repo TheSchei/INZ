@@ -1,0 +1,11 @@
+Powiêkszy³em wszystkie otwory na tuleje o 5 jednostki, czyli ~0.31mm (œrednica)
+Odsun¹³em uchwyt na DPDT o 5 mm
+poszerzy³em miejsce na DPDT w uchwycie 2 jednostki (0.12 mm)
+Powiêkszy³em w osi OY otwór na DHT22 o 5 jednostek, czyli ~0.31mm
+powiêkszy³em otwór na prze³¹cznik DPDT PROMIEÑ o 4 jednostki, czyli 0.5mm (œrenica)
+powiêkszy³em otwór na prze³¹cznik suwakowy (suwak) w ka¿d¹ stronê OZ o 8 jednostki, czyli 0.5mm; OY znacznie, ¿eby by³ zapas dla pewnoœci
+powiêkszy³em otwór na prze³¹cznik suwakowy (korpus) w ka¿d¹ stronê (OZ i OY) o 32 jednostki, czyli 2mm;
+Pog³êbi³em otwory przy BH1750 o 1 mm (8 jednostek)
+Zwiêkszy³em "roz³o¿ystoœæ" otworu na czujnik BH1750
+
++ poprawki wynikaj¹ce z rozmowy 08.01 (w tym zmiana niektórych z powy¿szych)

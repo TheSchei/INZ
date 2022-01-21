@@ -1,0 +1,11 @@
+code/WeatherStation/.pio
+
+code/WeatherStation/.vscode/.browse.c_cpp.db*
+
+code/WeatherStation/.vscode/c_cpp_properties.json
+
+code/WeatherStation/.vscode/launch.json
+
+code/WeatherStation/.vscode/ipch
+code/WeatherStation/.git
+code/WeatherStation/.gitignore
